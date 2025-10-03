@@ -1,17 +1,12 @@
 import java.util.*;
 import java.lang.Math;
 
-import java.util.*;
-import java.lang.Math;
-
 public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b, tambah, kali;
-
-        a = Integer.parseInt(input.nextLine());
-        b = Integer.parseInt(input.nextLine());
+        a = input.nextLine();
+        b = input.nextLine();
         if (a % 2 == 0) {
             System.out.println("Bilangan pertama: Genap");
         } else {
@@ -31,17 +26,11 @@ public class T00 {
                 System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (a % 2 == 0) {
-            if (b % 2 == 0) {
-                tambah = a + b;
-                System.out.println("Hasil penjumlahan: " + tambah);
-            } else {
-                System.out.println("Berbeda jenis");
-            }
+        if (a % 2 == 0 && b % 2 == 0) {
+            System.out.println("Hasil penjumlahan: " + a + b);
         } else {
-            if (b % 2 != 0) {
-                kali = a * b;
-                System.out.println("Hasil perkalian: " + kali);
+            if (a % 2 == 1 && b % 2 == 1) {
+                System.out.println("Hasil perkalian: " + a * b);
             } else {
                 System.out.println("Berbeda jenis");
             }
