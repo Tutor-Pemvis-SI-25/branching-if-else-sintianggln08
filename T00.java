@@ -7,7 +7,7 @@ public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b, t1, t2;
+        int a, b, tambah, kali;
 
         a = Integer.parseInt(input.nextLine());
         b = Integer.parseInt(input.nextLine());
@@ -24,19 +24,23 @@ public class T00 {
         if (a > b) {
             System.out.println("Bilangan pertama lebih besar");
         } else {
-            if (b > a) {
+            if (a < b) {
                 System.out.println("Bilangan kedua lebih besar");
             } else {
                 System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (a % 2 == 0 && b % 2 == 0) {
-            t1 = a + b;
-            System.out.println("Hasil penjumlahan: " + t1);
+        if (a % 2 == 0) {
+            if (b % 2 == 0) {
+                tambah = a + b;
+                System.out.println("Hasil penjumlahan: " + tambah);
+            } else {
+                System.out.println("Berbeda jenis");
+            }
         } else {
-            if (a % 2 != 0 && b % 2 != 0) {
-                t2 = a * b;
-                System.out.println("Hasil perkalian: " + t2);
+            if (b % 2 != 0) {
+                kali = a * b;
+                System.out.println("Hasil perkalian: " + kali);
             } else {
                 System.out.println("Berbeda jenis");
             }
