@@ -4,14 +4,14 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="sinti"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 09.34.12 AM"/>
+        <attribute name="saved" value="2025-10-04 09.50.35 AM"/>
         <attribute name="created" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDguMzguNTUgQU07MjAzMg=="/>
-        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDkuMzQuMTIgQU07NzsyMTM2"/>
+        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDkuNTAuMzUgQU07ODsyMTQw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="a, b" type="Integer" array="False" size=""/>
+            <declare name="a, b, t1, t2" type="Integer" array="False" size=""/>
             <input variable="a"/>
             <input variable="b"/>
             <if expression="a mod 2 = 0">
@@ -47,12 +47,14 @@
             </if>
             <if expression="(a mod 2 = 0) And (b mod 2 = 0)">
                 <then>
-                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; (a+b)" newline="True"/>
+                    <assign variable="t1" expression="a+b"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; t1" newline="True"/>
                 </then>
                 <else>
                     <if expression="(a mod 2 &lt;&gt; 0) And (b mod 2 &lt;&gt; 0)">
                         <then>
-                            <output expression="&quot;Hasil perkalian: &quot; &amp; (a*b)" newline="True"/>
+                            <assign variable="t2" expression="a*b"/>
+                            <output expression="&quot;Hasil perkalian: &quot; &amp; t2" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
