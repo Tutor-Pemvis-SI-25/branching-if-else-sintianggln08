@@ -23,7 +23,7 @@ public class T00 {
             System.out.println("Bilangan pertama lebih besar");
         } else {
             if (b > a) {
-                System.out.println("Kedua bilangan lebih besar");
+                System.out.println("Bilangan kedua lebih besar");
             } else {
                 System.out.println("Kedua bilangan sama besar");
             }
