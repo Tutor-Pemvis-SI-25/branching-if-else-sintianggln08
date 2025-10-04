@@ -23,10 +23,9 @@ public class T00 {
             System.out.println("Bilangan pertama lebih besar");
         } else {
             if (b > a) {
+                System.out.println("Kedua bilangan lebih besar");
             } else {
-                if (a == b) {
-                    System.out.println("Kedua bilangan sama besar");
-                }
+                System.out.println("Kedua bilangan sama besar");
             }
         }
         if (a % 2 == 0 && b % 2 == 0) {

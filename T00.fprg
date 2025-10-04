@@ -4,9 +4,9 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="sinti"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 09.11.30 AM"/>
+        <attribute name="saved" value="2025-10-04 09.18.03 AM"/>
         <attribute name="created" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDguMzguNTUgQU07MjAzMg=="/>
-        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDkuMTEuMzAgQU07MjsyMTI2"/>
+        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDkuMTguMDMgQU07MzsyMTM0"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -36,14 +36,11 @@
                 </then>
                 <else>
                     <if expression="b&gt;a">
-                        <then/>
+                        <then>
+                            <output expression="&quot;Kedua bilangan lebih besar&quot;" newline="True"/>
+                        </then>
                         <else>
-                            <if expression="a==b">
-                                <then>
-                                    <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
-                                </then>
-                                <else/>
-                            </if>
+                            <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
