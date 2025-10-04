@@ -4,9 +4,9 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="sinti"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 09.04.11 AM"/>
+        <attribute name="saved" value="2025-10-04 09.11.30 AM"/>
         <attribute name="created" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDguMzguNTUgQU07MjAzMg=="/>
-        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDkuMDQuMTEgQU07MTsyMTI2"/>
+        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDkuMTEuMzAgQU07MjsyMTI2"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -38,8 +38,7 @@
                     <if expression="b&gt;a">
                         <then/>
                         <else>
-                            <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
-                            <if expression="a=b">
+                            <if expression="a==b">
                                 <then>
                                     <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
                                 </then>

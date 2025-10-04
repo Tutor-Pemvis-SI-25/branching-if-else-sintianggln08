@@ -24,7 +24,6 @@ public class T00 {
         } else {
             if (b > a) {
             } else {
-                System.out.println("Bilangan kedua lebih besar");
                 if (a == b) {
                     System.out.println("Kedua bilangan sama besar");
                 }
