@@ -5,43 +5,41 @@ public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b, tambah, kali;
+        int bil1, bil2, bilganjil, bilgenap, perkalian, terbesar, penjumlahan, jenis, total1, total2;
 
-        a = Integer.parseInt(input.nextLine());
-        b = Integer.parseInt(input.nextLine());
-        if (a % 2 == 0) {
-            System.out.println("Bilangan pertama: Genap");
+        System.out.println("Masukkan bilangan pertama:");
+        bil1 = Integer.parseInt(input.nextLine());
+        System.out.println("Masukkan bilangan kedua:");
+        bil2 = Integer.parseInt(input.nextLine());
+        total1 = bil1 % 2;
+        total2 = bil2 % 2;
+        if (total1 == 1) {
+            System.out.println("bilangan pertama ganjil");
         } else {
-            System.out.println("Bilangan pertama: Ganjil");
+            System.out.println("bilangan pertama genap");
         }
-        if (b % 2 == 0) {
-            System.out.println("Bilangan kedua: Genap");
+        if (total2 == 1) {
+            System.out.println("bilangan kedua ganjil");
         } else {
-            System.out.println("Bilangan kedua: Ganjil");
+            System.out.println("bilangan kedua genap");
         }
-        if (a > b) {
-            System.out.println("Bilangan pertama lebih besar");
+        if (bil1 > bil2) {
+            terbesar = bil1;
+            System.out.println("bilangan pertama lebih besar" + terbesar);
         } else {
-            if (a < b) {
-                System.out.println("Bilangan kedua lebih besar");
-            } else {
-                System.out.println("Kedua bilangan sama besar");
-            }
+            terbesar = bil2;
+            System.out.println("bilangan kedua lebih besar" + terbesar);
         }
-        if (a % 2 == 0) {
-            if (b % 2 == 0) {
-                tambah = a + b;
-                System.out.println("Hasil penjumlahan: " + tambah);
-            } else {
-                System.out.println("Berbeda jenis");
-            }
-        } else {
-            if (b % 2 != 0) {
-                kali = a * b;
-                System.out.println("Hasil perkalian: " + kali);
-            } else {
-                System.out.println("Berbeda jenis");
-            }
+        if (total1 == 1 && total2 == 1) {
+            perkalian = bil1 * bil2;
+            System.out.println("hasil perkalian: " + perkalian);
+        }
+        if (total1 == 0 && total2 == 0) {
+            penjumlahan = bil1 + bil2;
+            System.out.println("hasil penjumlahan: " + penjumlahan);
+        }
+        if (total1 != total2) {
+            System.out.println("bilangan berbeda");
         }
     }
 }
