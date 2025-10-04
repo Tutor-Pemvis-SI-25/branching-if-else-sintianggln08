@@ -4,14 +4,14 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="sinti"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 09.32.19 AM"/>
+        <attribute name="saved" value="2025-10-04 09.34.12 AM"/>
         <attribute name="created" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDguMzguNTUgQU07MjAzMg=="/>
-        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDkuMzIuMTkgQU07NjsyMTQw"/>
+        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDkuMzQuMTIgQU07NzsyMTM2"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="a, b, JUMLAH, KALI" type="Integer" array="False" size=""/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
             <input variable="a"/>
             <input variable="b"/>
             <if expression="a mod 2 = 0">
