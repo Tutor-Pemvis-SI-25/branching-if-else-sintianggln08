@@ -4,16 +4,18 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="sinti"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 09.21.10 AM"/>
+        <attribute name="saved" value="2025-10-04 09.29.16 AM"/>
         <attribute name="created" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDguMzguNTUgQU07MjAzMg=="/>
-        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDkuMjEuMTAgQU07NDsyMTI3"/>
+        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMDQ7MDkuMjkuMTYgQU07NTsyMTQy"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="a, b" type="Integer" array="False" size=""/>
+            <declare name="a, b, JUMLAH, KALI" type="Integer" array="False" size=""/>
             <input variable="a"/>
             <input variable="b"/>
+            <assign variable="JUMLAH" expression="a+b"/>
+            <assign variable="KALI" expression="a*b"/>
             <if expression="a mod 2 = 0">
                 <then>
                     <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
@@ -47,12 +49,12 @@
             </if>
             <if expression="(a mod 2 = 0) And (b mod 2 = 0)">
                 <then>
-                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; (a + b)" newline="True"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; JUMLAH" newline="True"/>
                 </then>
                 <else>
                     <if expression="(a mod 2 &lt;&gt; 0) And (b mod 2 &lt;&gt; 0)">
                         <then>
-                            <output expression="&quot;Hasil perkalian: &quot; &amp; (a * b)" newline="True"/>
+                            <output expression="&quot;Hasil perkalian: &quot; &amp; KALI" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
